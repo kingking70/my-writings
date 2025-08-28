@@ -9,6 +9,11 @@ body {
   background: #f8fafc; /* slate-50 */
 }
 
+a {
+  /* text-decoration: none; */
+  color: black;
+}
+
 /* Page wrapper centers content like a doc on a desk */
 .page-wrap {
   min-height: 100vh;

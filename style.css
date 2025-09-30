@@ -9,9 +9,15 @@ body {
   background: #f8fafc; /* slate-50 */
 }
 
+
 a {
   /* text-decoration: none; */
   color: black;
+}
+
+table, th, td {
+  padding: 20px;
+  text-align: center;
 }
 
 /* Page wrapper centers content like a doc on a desk */
@@ -26,11 +32,11 @@ a {
 .doc {
   width: 100%;
   max-width: 800px; /* readable measure on desktop */
-  background: #ffffff;
+  /* background: #ffffff; */
   color: inherit;
   padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  /* border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06); */
 }
 
 .doc h1, .doc h2, .doc h3 {
@@ -44,6 +50,12 @@ a {
 /* Improve readability for long-form content */
 .doc {
   text-align: left; /* left-aligned like a word doc */
+}
+
+/* Center images */
+.center {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Mobile tweaks */

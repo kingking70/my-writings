@@ -9,10 +9,27 @@ body {
   background: #f8fafc; /* slate-50 */
 }
 
+:root {
+  color-scheme: light;
+}
+
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body {
+  background: #000;
+  color: #f8fafc;
+}
+
 
 a {
   /* text-decoration: none; */
   color: black;
+}
+
+html.dark-mode a {
+  color: #f8fafc;
 }
 
 table, th, td {
@@ -62,4 +79,27 @@ table, th, td {
 @media (max-width: 480px) {
   .page-wrap { padding: 16px; }
   .doc { padding: 16px; border-radius: 10px; }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+html.dark-mode .theme-toggle {
+  background: #111827;
+  border-color: #e5e7eb;
 }

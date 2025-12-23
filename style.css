@@ -84,7 +84,7 @@ table, th, td {
 .theme-toggle {
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 40px;
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid currentColor;
